@@ -7,11 +7,7 @@ public class CriptografiaCesariana implements Criptografia {
     @Override
     public String criptografar(String texto) {
     	
-    	if (texto == "")
-    		throw new IllegalArgumentException();
-    	if (texto.isEmpty())
-    		throw new NullPointerException();
-        //	throw new UnsupportedOperationException("esse method nao esta implementado aainda");
+    	testaString(texto);
 
     	String result = "";
     	texto = texto.toLowerCase();
@@ -34,11 +30,7 @@ public class CriptografiaCesariana implements Criptografia {
     @Override
     public String descriptografar(String texto) {
     	
-    	if (texto == "")
-    		throw new IllegalArgumentException();
-    	if (texto.isEmpty())
-    		throw new NullPointerException();
-    	//	throw new UnsupportedOperationException("esse method nao esta implementado aainda");
+    	testaString(texto);
         
     	String result = "";
     	texto = texto.toLowerCase();
@@ -55,6 +47,15 @@ public class CriptografiaCesariana implements Criptografia {
     	
         
         return result;
+    }
+    
+    public void testaString(String text) {
+    	
+    	if (text == "")
+    		throw new IllegalArgumentException();
+    	if (text.isEmpty())
+    		throw new NullPointerException();
+    	
     }
     
 

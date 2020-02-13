@@ -10,7 +10,7 @@ public class CriptografiaTest {
         Criptografia criptografia1 = new CriptografiaCesariana();
        
         
-        //System.out.println(criptografia1.criptografar(null));
+        System.out.println(criptografia1.criptografar(null));
         //System.out.println(criptografia1.criptografar(""));
         //System.out.println(criptografia1.descriptografar(null));
         //System.out.println(criptografia1.descriptografar(""));
