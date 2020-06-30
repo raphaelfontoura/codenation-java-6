@@ -11,9 +11,6 @@ public class CriptografiaTest {
        
         
         System.out.println(criptografia1.criptografar(null));
-        //System.out.println(criptografia1.criptografar(""));
-        //System.out.println(criptografia1.descriptografar(null));
-        //System.out.println(criptografia1.descriptografar(""));
         System.out.println(criptografia1.criptografar(TEXTO_DESCRIPTOGRAFADO));
         System.out.println(criptografia1.descriptografar(TEXTO_CRIPTOGRAFADO));
         System.out.println(criptografia1.criptografar("sejam bem vindos ao Acelera Brasil 2019"));
